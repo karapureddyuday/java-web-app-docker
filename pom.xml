@@ -110,12 +110,16 @@
 	      <url>http://13.235.8.113:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement> -->
-	<build>
+<build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.2</version> <!-- Latest stable version -->
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Ensure a recent version -->
+            <configuration>
+                <source>8</source> <!-- Set source compatibility -->
+                <target>8</target> <!-- Set target compatibility -->
+            </configuration>
         </plugin>
     </plugins>
 </build>
