@@ -114,15 +114,12 @@
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version> <!-- Ensure a recent version -->
-            <configuration>
-                <source>8</source> <!-- Set source compatibility -->
-                <target>8</target> <!-- Set target compatibility -->
-            </configuration>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>
         </plugin>
     </plugins>
 </build>
+
 
 
 	
