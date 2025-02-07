@@ -110,12 +110,17 @@
 	      <url>http://13.235.8.113:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement> -->
+<properties>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+</properties>
+
 <build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
+            <version>3.8.1</version>  <!-- Ensure this is updated -->
             <configuration>
                 <source>8</source>
                 <target>8</target>
@@ -123,6 +128,7 @@
         </plugin>
     </plugins>
 </build>
+
 
 
 
